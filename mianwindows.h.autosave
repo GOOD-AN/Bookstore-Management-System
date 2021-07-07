@@ -1,0 +1,24 @@
+#ifndef MIANWINDOWS_H
+#define MIANWINDOWS_H
+
+#include <QWidget>
+
+QT_BEGIN_NAMESPACE
+namespace Ui { class mianwindows; }
+QT_END_NAMESPACE
+
+class mianwindows : public QWidget
+{
+    Q_OBJECT
+
+public:
+    mianwindows(QWidget *parent = nullptr);
+    ~mianwindows();
+    
+    void showInfo();
+    void showInfo2();
+
+private:
+    Ui::mianwindows *ui;
+};
+#endif // MIANWINDOWS_H
